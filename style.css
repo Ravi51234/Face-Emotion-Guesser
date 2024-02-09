@@ -1,0 +1,23 @@
+body{
+    background: linear-gradient(to right top, skyblue, rgb(56, 74, 173));
+}
+
+h1{
+    width:80%;
+    padding:10px;
+}
+
+h3{
+    color:darkred;
+    font-weight: bolder;
+}
+
+#list{
+    color:darkgreen;
+    font-weight: bolder;
+}
+
+#camera,#result{
+    height:300px;
+    width:300px;
+}

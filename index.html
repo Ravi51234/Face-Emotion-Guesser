@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Emotion Guesser</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js"></script>
+    </head>
+    <body onload="attach_camera()">
+        <div class="container">
+        <center>
+        <h1 class="btn btn-primary">Emotion Guesser</h1>
+        <h3>This Website Can Guess These Emotions:</h3>
+        <div id="list">
+        <p>
+            Happy
+            <hr>
+            Crying
+            <hr>
+            Sad
+            <hr>
+            Angry
+            <hr>
+        </p>
+        </div>
+        <label>Webcam:</label>
+        <div id="camera"></div>
+        <br>
+        <label>Result:</label>
+        <div id="result"></div>
+
+        <button class="btn btn-success" onclick="take_snapshot()">Capture Image</button>
+        <br><br>
+        <button class="btn btn-warning" onclick="identify()">Identify Image</button>
+        <br><br>
+        <p style="font-size:22px;">Emotion: <span id="result_emotion_name"></span></p>
+        <p style="font-size:22px;">Accuracy: <span id="result_accuracy_name"></span></p>
+    </body>                
+    </center>
+    </div>
+</html>
